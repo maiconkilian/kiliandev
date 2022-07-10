@@ -8,7 +8,7 @@ const verificaLogin = async (req, res, next) => {
     const { authorization } = req.headers;
 
     if (!authorization) {
-        return res.status(401).json({ Mensagem: 'Não autorizado - você deve primeiro cadastrar um usuario, fazer login e enviar o token' });
+        return res.status(401).json({ Mensagem: 'Ainda não autorizado - você deve primeiro cadastrar um usuario, fazer login e enviar o token' });
     }
 
     try {
